@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Övning 13</title>
+	<style>
+		body > ul > li{	
+			display: inline-block;
+		}
+
+		#innerList{
+			/*visibility: hidden;*/
+			/*opacity: 0;*/
+			display: none;
+		}
+		
+		#redigera:hover + #innerList{
+			border-style: solid;
+			/*opacity: 1;*/
+			/*visibility: visible;*/
+			display: block;
+			width: 100px;
+			/*Position absolute löste allt så att menyn lade sig precis under redigera utan att knuffa ner Visa och Infoga*/
+			position: absolute;
+		}
+	</style>
+
+</head>
+<body>
+	<ul>
+		<li>Arkiv</li>
+		<li id="redigera">Redigera</li>
+			<ul id="innerList">
+				<li>Ångra</li>
+				<li>Gör om</li>
+				<li>Klipp ut</li>
+				<li>Kopiera</li>
+				<li>Klistra in</li>
+			</ul>
+		<li>Visa</li>
+		<li>Infoga</li>
+	</ul>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Övning 10</title>
+<style>
+#black{
+	width: 70%;
+	height: 1000px;
+	position: relative;
+	top: 200px;
+	background-color: black;
+	color: white;
+	margin: auto;
+}
+#white{
+	background-color: white;
+	z-index: 1;
+	position: fixed;
+	top:250px;
+	left: 50%;
+	height: 100px;
+	width: 100px;
+}
+#green{
+	background-color: green;
+	z-index: 2;
+	position: relative;
+	top: -1000px;
+	left: 700px;
+	width: 100px;
+	height: 500px;
+}
+
+</style>	
+
+</head>
+<body>
+	<div id="black">Black</div>
+	<div id="white">White</div>
+	<div id="green">Green</div>
+
+</body>
+</html>

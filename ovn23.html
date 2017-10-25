@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Övning 23</title>
+	<style>
+		div{
+			border: solid 2px black;
+			width: 25%;
+			position: relative;
+			margin: auto;
+			background-color: lightgray;
+		}
+		*{
+			margin: 5px;	
+		}
+	</style>
+</head>
+<body>
+<div>
+	<form>
+	<input type="radio" name="typKund" checked>Privat<input type="radio" name="typKund">Företag<br />
+	<label>Förnamn</label><br />
+	<input type="text" name="firstName"><br />
+	<label>Efternamn</label><br />
+	<input type="text" name="lastName"><br />
+	<label>Adress</label><br />
+	<textarea cols="25" rows="4" value="adress" placeholder="Gata, Postnummer och Ort"></textarea><br />
+	<label>Betalnings val</label><br />
+	<select name="pay">
+		<option value="invoice">Faktura</option>
+		<option value="card">Betalkort</option>
+		<option value="paypal">Paypal</option>
+		<option value="choose" selected hidden>Välj</option>
+	</select><br />
+	<input type="checkbox" name="newsletter"><label>Nyhetsbrev</label><br />
+	<input type="checkbox" name="terms" required><label>Jag har läst betalningsvillkoren</label><br />
+	<button type="submit">Betala</button>
+	</form>
+</div>
+</body>
+</html>
